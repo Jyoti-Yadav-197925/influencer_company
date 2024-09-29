@@ -2,7 +2,9 @@ import { Button,styled } from "@mui/material";
 
 
 export const BootstrapButton = styled(Button)({
+  
     boxShadow: 'none',
+    height:'3rem',
     textTransform: 'none',
     fontSize: 16,
     padding: '6px 12px',
@@ -10,6 +12,7 @@ export const BootstrapButton = styled(Button)({
     lineHeight: 1.5,
     backgroundColor: '#2c3e50',
     borderColor: '#2c3e50',
+    color:'white',
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',

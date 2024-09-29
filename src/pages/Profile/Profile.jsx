@@ -3,11 +3,10 @@ import React from 'react'
 import { Typography } from '@mui/material'
 import { Box, Stack } from '@mui/material'
 import Grid from '@mui/material/Grid2';
-import { CustomTextField } from '../../components/comon/textfield/TextField.tsx';
-import { BootstrapButton } from '../../components/comon/Buttons/Buttons.tsx';
+import { CustomTextField } from '../../components/textfields/TextField.tsx';
+import { BootstrapButton } from '../../components/buttons/Buttons.tsx';
 import { Profilestyles } from './style/Style.js';
-import { right } from '../../asstes.js';
-// import { Formik,Field,Form} from 'formik';
+import { Right } from '../../assets.jsx';
 function Profile() {
   return (
     <>
@@ -45,7 +44,7 @@ function Profile() {
                   <CustomTextField fullWidth size="small" />
                 </Box>
                 <BootstrapButton variant="contained" disableRipple>
-                  Edite
+                  Save
                 </BootstrapButton>
               </Stack>
             </Box>
@@ -53,7 +52,7 @@ function Profile() {
           <Grid  size={{ xs: 12, sm: 12, md: 6, lg: 6, xl: 6 }}
             sx={{ display: { xs: 'none', sm: 'none', md: 'block', } }}>
               <Box sx={{width:'100%',height:'100vh'}}>
-                  <img src={right} alt='right'
+                  <img src={Right} alt='right'
                   style={{width: '100%',height: '100%',objectFit: 'cover',borderRadius: '5rem'  // Cover the box while maintaining aspect ratio
                   }}
                   />

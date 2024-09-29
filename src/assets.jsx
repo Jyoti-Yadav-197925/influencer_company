@@ -44,9 +44,31 @@ import profile_pic from "../src/assets/Images/card_profile_img.png"
 import cardicon_link from "../src/assets/Images/card_ink_icon.png"
 import crocs from "../src/assets/Images/Ellipse_58.png"
 import campaign from "../src/assets/Images/campaign_announcemt.png"
+import InstaG from "../src/assets/Images/instag.png"
+import StoryG from "../src/assets/Images/storyg.png"
+import Facewash from "../src/assets/Images/instag.png"
+import ImageIcon from  "../src/assets/Images/image1657.png"
+import ReelG  from "../src/assets/Images/reelG.png"
+import Right from "../src/assets/Images/img.png"
+import payment from "../src/assets/Images/payments.png"
+import GPay from "../src/assets/Images/Gp.png"
+import phonePay from "../src/assets/Images/pp.png"
+import paytym from "../src/assets/Images/pay.png"
+import AddCard from "../src/assets/Images/addCard.png"
 
 // Export all the image assets
 export {
+  AddCard,
+  paytym,
+  phonePay,
+  GPay,
+  payment,
+  Right,
+  Facewash,
+  ImageIcon,
+  ReelG,
+  StoryG,
+  InstaG,
   Loginimg,
   Boat,
   Lencecart,

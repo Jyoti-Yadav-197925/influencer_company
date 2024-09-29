@@ -29,7 +29,7 @@ const CardComponent = () => {
   ];
   const handleViewDetails = () => {
     // Add your view details logic here 
-    console.log("View details clicked!");
+    
   };
  
   return (
@@ -66,12 +66,12 @@ const CardComponent = () => {
           <h4 className="text-gray-400 font-thin">Total:</h4>
           <p className="font-bold text-lg ml-2">{items[0].price}</p>
         </div>
-        <button
-              onClick={handleViewDetails}
+        <a href="/viewdetails"
+              // onClick={handleViewDetails}
               className="text-blue-500 underline cursor-pointer font-medium text-xs"
             >
               View Details
-            </button>
+            </a>
           
           </div>
    

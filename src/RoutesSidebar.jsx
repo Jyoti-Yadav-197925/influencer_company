@@ -1,36 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './components/side_bar/SideBar'; // Adjusted paths if necessary
-import DashboardPage from './pages/Dashbord/InfluencerDashboard';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/side_bar/SideBar'; // Adjust the path based on your file structure
+// import DashboardPage from './pages/Dashbord/InfluencerDashboard';
 import DashNavbar from './components/NavBar/DashNav';
-import Request from './pages/Dashbord/Request';
-import Brand from './pages/Dashbord/Brand';
-import PortfolioBar from './pages/Dashbord/PortfolioBar';
-import Membership from './pages/Dashbord/InfluencerMembership';
-import About from './pages/Dashbord/About';
-import UploadWork from './pages/Dashbord/UploadWork';
-
+// import Request from './pages/Dashbord/Request.js';
+// import Brand from './pages/Dashbord/Brand.js';
+// import PortfolioBar from './pages/Dashbord/PortfolioBar.js';
+// import Membership from './pages/Dashbord/InfluencerMembership.js';
+// import About from './pages/Dashbord/About.js';
+// import UploadWork from './pages/Dashbord/UploadWork.js';
+// import ViewDetails from './pages/Dashbord/ViewDetails.js';
+import { Outlet } from 'react-router-dom';
 function SideBarRoute() {
   return (
-    <Router>
-      <div className="flex h-screen"> {/* Full screen height */}
-        <Sidebar />
-        <div className="flex-grow flex flex-col overflow-auto">
-          <DashNavbar />
-          <div className="flex-grow p-4 overflow-auto"> {/* Padding and height adjustment */}
-            <Routes>
-              <Route path="/dashboard" element={<DashboardPage />} />
-              <Route path="/request" element={<Request />} />
-              <Route path="/brand" element={<Brand />} />
-              <Route path="/portfolio" element={<PortfolioBar />} />
-              <Route path="/membership" element={<Membership />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/uploadwork" element={<UploadWork />} />
-            </Routes>
-          </div>
+
+    <div className="flex h-screen"> {/* Removed <Router> */}
+      <Sidebar />
+      <div className="flex-grow flex flex-col overflow-auto">
+        <DashNavbar />
+        <div className="flex-grow p-4 overflow-auto">
+          <Outlet /> {/* Renders nested routes */}
         </div>
       </div>
-    </Router>
+    </div>
   );
 }
 

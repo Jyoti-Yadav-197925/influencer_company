@@ -11,7 +11,7 @@ function Sidebar() {
       <ul className="space-y-4">
         <li className="flex items-center">
           <NavLink 
-            to='/dashboard' 
+            to='/deshboard' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-700 text-gray-800'}`}
           >
             <FaTachometerAlt className="mr-3" /> Dashboard
@@ -19,7 +19,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/request' 
+            to='request' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaUser className="mr-3" /> Request
@@ -27,7 +27,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/brand' 
+            to='brand' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaGem className="mr-3" /> Brand
@@ -35,7 +35,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/portfolio' 
+            to='portfolio' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaFolder className="mr-3" /> Portfolio
@@ -43,7 +43,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/membership' 
+            to='membership' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaUsers className="mr-3" /> Membership
@@ -51,7 +51,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/about' 
+            to='about' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaInfoCircle className="mr-3" /> About
@@ -61,7 +61,7 @@ function Sidebar() {
       <ul className="space-y-4">
         <li className="flex items-center">
           <NavLink 
-            to='/uploadwork' 
+            to='uploadwork' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaUpload className="mr-2" /> Upload work
@@ -69,7 +69,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center">
           <NavLink 
-            to='/setting' 
+            to='setting' 
             className={({ isActive }) => `flex items-center p-2 w-full h-12 rounded-md ${isActive ? 'bg-gray-800 text-white' : 'hover:bg-gray-200 text-gray-800'}`}
           >
             <FaCog className="mr-3" /> Setting
